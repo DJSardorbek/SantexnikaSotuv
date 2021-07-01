@@ -424,3 +424,4 @@ E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debu
 E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.Windows.Forms.dll
 E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\ShockwaveFlashObjects.dll
 E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.frmPrint.resources
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.AssemblyReference.cache

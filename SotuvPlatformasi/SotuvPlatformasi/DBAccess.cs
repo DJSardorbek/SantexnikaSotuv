@@ -15,9 +15,9 @@ namespace SotuvPlatformasi
         private static MySqlDataReader DbReader;
         private static MySqlDataAdapter adapter = new MySqlDataAdapter();
         public MySqlTransaction DbTran;
-        //public static string ip_address = "";//;;datasource=127.0.0.1
+        //public static string ip_address = "";//;;;Persist Security Info=False;server=192.168.43.28
 
-        public string strConnString = "Persist Security Info=False;server=192.168.43.28;port=3306;username=programmer;password=2427651701;database=santexnikafilial";
+        public string strConnString = "datasource=127.0.0.1;port=3306;username=programmer;password=2427651701;database=santexnikafilial";
 
         public int executeDataAdapter(DataTable tblName, string strSelectMySql)
         {
