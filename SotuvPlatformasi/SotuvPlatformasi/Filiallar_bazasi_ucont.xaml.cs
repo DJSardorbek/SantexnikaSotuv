@@ -31,7 +31,6 @@ namespace SotuvPlatformasi
             comboFilial.Items.Add("Filial1");
             comboFilial.Items.Add("Filial2");
             comboFilial.Items.Add("Filial3");
-            comboFilial.Items.Add("Filial4");
         }
         public class Product
         {
@@ -93,7 +92,7 @@ namespace SotuvPlatformasi
             {
                 
                 string urlProductfilial = "http://santexnika.backoffice.uz/api/productfilial/by_filial/?f=" + (comboFilial.SelectedIndex + 1).ToString();
-                combo_sel_index = (comboFilial.SelectedIndex + 1).ToString();
+                combo_sel_index = (comboFilial.SelectedIndex + 3).ToString();
                 ProductFilialContent = await GetObject(urlProductfilial);
                 myEffect.Radius = 10;
                 Effect = myEffect;
