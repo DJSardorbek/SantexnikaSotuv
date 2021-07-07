@@ -478,7 +478,6 @@ C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.xml
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.xml
-C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.AssemblyReference.cache
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.g.cs
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.g.cs

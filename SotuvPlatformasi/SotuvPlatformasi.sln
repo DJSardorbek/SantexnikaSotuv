@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SotuvPlatformasi", "SotuvPlatformasi\SotuvPlatformasi.csproj", "{4F97A197-F231-4429-80A2-F836E7D9CBE6}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sotuv", "Sotuv\Sotuv.vdproj", "{051E0351-0ECC-4A9F-989A-59F5C44470BE}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Santexnika_Sotuv", "Santexnika_Sotuv\Santexnika_Sotuv.vdproj", "{67499163-5CEB-4555-90AF-06672D76F1E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +20,9 @@ Global
 		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{051E0351-0ECC-4A9F-989A-59F5C44470BE}.All|Any CPU.ActiveCfg = Debug
-		{051E0351-0ECC-4A9F-989A-59F5C44470BE}.Debug|Any CPU.ActiveCfg = Debug
-		{051E0351-0ECC-4A9F-989A-59F5C44470BE}.Release|Any CPU.ActiveCfg = Release
+		{67499163-5CEB-4555-90AF-06672D76F1E6}.All|Any CPU.ActiveCfg = Debug
+		{67499163-5CEB-4555-90AF-06672D76F1E6}.Debug|Any CPU.ActiveCfg = Debug
+		{67499163-5CEB-4555-90AF-06672D76F1E6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

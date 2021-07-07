@@ -198,7 +198,6 @@ namespace SotuvPlatformasi
                         Uri u = new Uri("http://santexnika.backoffice.uz/api/shop/add/");
 
                         var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \"" + naqd_dollar + "\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \""+nasiya_som+"\",\"nasiya_dollar\": \""+nasiya_dollar+"\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \""+fio+"\",\"phone\": \""+phone+"\"}";
-                        System.Windows.MessageBox.Show(payload);
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
                         t.Wait();
@@ -650,7 +649,7 @@ namespace SotuvPlatformasi
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token 28aeccd6cbbb18b16fddf2967d0b35242ad6a0a3");
+                client.DefaultRequestHeaders.Add("Authorization", "token 62115f83e1c1e8b588fa419330976ea6012d1cd4");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);
@@ -677,7 +676,7 @@ namespace SotuvPlatformasi
         public static async Task<string> GetObject(string restCallURL)
         {
             HttpClient apiCallClient = new HttpClient();
-            string authToken = "token 28aeccd6cbbb18b16fddf2967d0b35242ad6a0a3";
+            string authToken = "token 62115f83e1c1e8b588fa419330976ea6012d1cd4";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
