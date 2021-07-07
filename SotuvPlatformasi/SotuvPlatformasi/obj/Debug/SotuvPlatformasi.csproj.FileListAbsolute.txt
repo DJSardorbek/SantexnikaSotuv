@@ -563,3 +563,4 @@ C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.AssemblyReference.cache
