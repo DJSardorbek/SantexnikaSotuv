@@ -120,7 +120,7 @@ namespace SotuvPlatformasi
 
                         Uri u = new Uri("http://santexnika.backoffice.uz/api/shop/add/");
 
-                        var payload = "\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \""+naqd_dollar+"\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \"0\",\"nasiya_dollar\": \"0\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \""+skidka_som+"\",\"skidka_dollar\": \"" + skidka_dollar+ "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\"}";
+                        var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \""+naqd_dollar+"\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \"0\",\"nasiya_dollar\": \"0\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \""+skidka_som+"\",\"skidka_dollar\": \"" + skidka_dollar+ "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\"}";
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
                         t.Wait();
@@ -197,7 +197,7 @@ namespace SotuvPlatformasi
 
                         Uri u = new Uri("http://santexnika.backoffice.uz/api/shop/add/");
 
-                        var payload = "\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \"" + naqd_dollar + "\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \""+nasiya_som+"\",\"nasiya_dollar\": \""+nasiya_dollar+"\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \""+fio+"\",\"phone\": \""+phone+"\"}";
+                        var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \"" + naqd_dollar + "\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \""+nasiya_som+"\",\"nasiya_dollar\": \""+nasiya_dollar+"\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \""+fio+"\",\"phone\": \""+phone+"\"}";
                         System.Windows.MessageBox.Show(payload);
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
@@ -259,7 +259,7 @@ namespace SotuvPlatformasi
 
                         Uri u = new Uri("http://santexnika.backoffice.uz/api/shop/add/");
 
-                        var payload = "\"naqd_som\": \"0\",\"naqd_dollar\": \"0\",\"plastik\": \"0\",\"nasiya_som\": \"" + nasiya_som + "\",\"nasiya_dollar\": \"" + nasiya_dollar + "\",\"transfer\": \"0\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \"" + fio + "\",\"phone\": \"" + phone + "\"}";
+                        var payload = "{\"naqd_som\": \"0\",\"naqd_dollar\": \"0\",\"plastik\": \"0\",\"nasiya_som\": \"" + nasiya_som + "\",\"nasiya_dollar\": \"" + nasiya_dollar + "\",\"transfer\": \"0\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \"" + fio + "\",\"phone\": \"" + phone + "\"}";
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
                         t.Wait();
