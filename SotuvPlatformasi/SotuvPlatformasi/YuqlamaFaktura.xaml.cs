@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.Json;
 using System.Net.Http;
+using MySql.Data.MySqlClient;
 
 namespace SotuvPlatformasi
 {
@@ -50,6 +51,7 @@ namespace SotuvPlatformasi
         public static DataTable tbProducts;
         public static DataTable tbYuqFaktura;
         public static string product_id = "", pr_name = "", quantity = "", barcode = "";
+        public static MySqlCommand cmd;
 
         public class Product
         {
@@ -72,14 +74,21 @@ namespace SotuvPlatformasi
             public string barcode { get; set; }
         }
 
-        public class YuqFakturaSubmit
+        public class Item
         {
-            public double quantity { get; set; }
             public string barcode { get; set; }
+            public double quantity { get; set; }
         }
 
+        public class YuqFakturaSubmit
+        {
+            public int filial { get; set; }
+            public IList<Item> item { get; set; }
+        }
+
+        YuqFakturaSubmit submit = new YuqFakturaSubmit();
         List<YuqFaktura> yuqFakturaList = new List<YuqFaktura>();
-        List<YuqFakturaSubmit> yuqSubmitList = new List<YuqFakturaSubmit>();
+        List<Item> yuqSubmitList = new List<Item>();
 
         static async Task<string> PostURI(Uri u, HttpContent c)
         {
@@ -124,10 +133,10 @@ namespace SotuvPlatformasi
             return yuqFakturaList;
         }
 
-        public List<YuqFakturaSubmit> GetSubmitList()
+        public List<Item> GetSubmitList()
         {
             yuqSubmitList = (from DataRow dr in tbYuqFaktura.Rows
-                              select new YuqFakturaSubmit()
+                              select new Item()
                               {
                                   quantity = Convert.ToDouble(dr["quantity"]),
                                   barcode = dr["barcode"].ToString()
@@ -257,8 +266,11 @@ namespace SotuvPlatformasi
         {
             try
             {
-                var json = System.Text.Json.JsonSerializer.Serialize(GetSubmitList());
-                Uri u = new Uri("http://santexnika.backoffice.uz/api/fakturaitem/add_kamomad");
+                submit.filial = Convert.ToInt32(MainWindow.filial_id);
+                submit.item = GetSubmitList();
+                
+                var json = System.Text.Json.JsonSerializer.Serialize(submit);
+                Uri u = new Uri("http://santexnika.backoffice.uz/api/fakturaitem/add_kamomad/");
                 HttpContent content = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
                 var t = Task.Run(() => PostURI(u, content));
                 t.Wait();
@@ -269,6 +281,20 @@ namespace SotuvPlatformasi
                 }
                 else
                 {
+                    DataTable tbUpdateProduct = new DataTable();
+                    string queryUpdateProduct = "";
+                    foreach (DataRow item in tbYuqFaktura.Rows)
+                    {
+                        queryUpdateProduct = "select quantity from product where barcode='" + item["barcode"] + "'";
+                        objDBAccess.readDatathroughAdapter(queryUpdateProduct, tbUpdateProduct);
+                        if(tbUpdateProduct.Rows.Count != 0)
+                        {
+                            cmd = new MySqlCommand("update product set quantity='" + item["quantity"] + "' where barcode='" + item["barcode"] + "'");
+                            objDBAccess.executeQuery(cmd);
+                            cmd.Dispose();
+                        }
+                    }
+                    tbUpdateProduct.Dispose();
                     tbYuqFaktura.Clear();
                     dataGridBasket.ItemsSource = GetYuqFakturaList();
                     System.Windows.MessageBox.Show("Faktura yo'qlamasi muvaffaqiyatli yakunlandi!", "Xabar", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);

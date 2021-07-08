@@ -512,3 +512,10 @@ C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\SotuvPlatformasi.csproj.CopyComplete
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\SotuvPlatformasi.exe
 C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\SotuvPlatformasi.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\SotuvPlatformasi.csproj.AssemblyReference.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\faktura_all.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\YFakturaAdd.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\YuqlamaFaktura.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\faktura_all.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\YFakturaAdd.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Release\YuqlamaFaktura.baml

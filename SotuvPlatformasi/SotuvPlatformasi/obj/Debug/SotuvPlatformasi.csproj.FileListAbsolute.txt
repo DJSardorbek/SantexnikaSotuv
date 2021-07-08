@@ -570,3 +570,9 @@ E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debu
 E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.baml
 E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.g.cs
 E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.baml

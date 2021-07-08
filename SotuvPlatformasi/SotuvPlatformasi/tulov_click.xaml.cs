@@ -626,7 +626,7 @@ namespace SotuvPlatformasi
                 if (skidkaDollar != "0") { print += "Skidka $: " + skidkaDollar + "\n"; }
                 print += "\n" + footer;
                 Tul_qab_ucont.print = print;
-                Tul_qab_ucont.p_Date = DateTime.Now.ToString("dd MMMM yyyy");
+                Tul_qab_ucont.p_Date = DateTime.Now.ToString("yyyy-MM-dd");
                 Tul_qab_ucont.pKlient = txtClient.Text;
                 Tul_qab_ucont.pTel = tel_1;
                 Tul_qab_ucont.pQarz_som = xaq_som;
@@ -786,19 +786,20 @@ namespace SotuvPlatformasi
                 //debt jadvaliga debtor_id, shop_id, return_date larni yozamiz
                 string Debtor_id = debtor_id;
                 string date_now = "";
-                if (dateTimePicker1.Text != "")
-                {
-                    string date = dateTimePicker1.SelectedDate.ToString();
-                    int index = date.IndexOf("0:");
-                    date = date.Substring(0, index);
+                date_now = dateTimePicker1.SelectedDate.Value.Date.ToString("yyyy-MM-dd");
+                //if (dateTimePicker1.Text != "")
+                //{
+                //    string date = dateTimePicker1.SelectedDate.ToString();
+                //    int index = date.IndexOf("0:");
+                //    date = date.Substring(0, index);
 
-                    string day = date.Substring(0, 2);
-                    string month = date.Substring(3, 2);
-                    string year = date.Substring(6, 4);
+                //    string day = date.Substring(0, 2);
+                //    string month = date.Substring(3, 2);
+                //    string year = date.Substring(6, 4);
 
-                    date = year + "-" + month + "-" + day;
-                    date_now = date;
-                }
+                //    date = year + "-" + month + "-" + day;
+                //    date_now = date;
+                //}
 
                 cmdDebt = new MySqlCommand("insert into debt (id,debtor_id, shop_id, return_date) values('" + Debt_id + "','" + Debtor_id + "', '" + shopId + "','" + date_now + "' )");
                 objDBAccess.executeQuery(cmdDebt);

@@ -32,7 +32,6 @@ namespace SotuvPlatformasi
             comboFilial.Items.Add("Filial1");
             comboFilial.Items.Add("Filial2");
             comboFilial.Items.Add("Filial3");
-            comboFilial.Items.Add("Filial4");
         }
 
         public FakturaHisob FakturaHisobs = new FakturaHisob();
@@ -88,7 +87,7 @@ namespace SotuvPlatformasi
         {
             try
             {
-                string url = "http://santexnika.backoffice.uz/api/faktura/st2/?fil=" + (comboFilial.SelectedIndex + 1).ToString();
+                string url = "http://santexnika.backoffice.uz/api/faktura/st2/?fil=" + (comboFilial.SelectedIndex + 3).ToString();
                 string FakturaContent = await GetObject(url);
                 myEffect.Radius = 10;
                 Effect = myEffect;

@@ -131,6 +131,7 @@ namespace SotuvPlatformasi
                 txtName.Clear();
                 txtPass.Clear();
                 txtSurname.Clear();
+                this.Close();
                 
             }
         }
