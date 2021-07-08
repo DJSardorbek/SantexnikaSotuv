@@ -201,6 +201,9 @@
     <Compile Include="FakturaHisob_ucont.xaml.cs">
       <DependentUpon>FakturaHisob_ucont.xaml</DependentUpon>
     </Compile>
+    <Compile Include="faktura_all.xaml.cs">
+      <DependentUpon>faktura_all.xaml</DependentUpon>
+    </Compile>
     <Compile Include="faktura_kurish_ucont.xaml.cs">
       <DependentUpon>faktura_kurish_ucont.xaml</DependentUpon>
     </Compile>
@@ -281,6 +284,12 @@
     <Compile Include="Tul_qab_ucont.xaml.cs">
       <DependentUpon>Tul_qab_ucont.xaml</DependentUpon>
     </Compile>
+    <Compile Include="YFakturaAdd.xaml.cs">
+      <DependentUpon>YFakturaAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YuqlamaFaktura.xaml.cs">
+      <DependentUpon>YuqlamaFaktura.xaml</DependentUpon>
+    </Compile>
     <Page Include="Asosiy_ucont.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -318,6 +327,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FakturaHisob_ucont.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="faktura_all.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -430,6 +443,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Tul_qab_ucont.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YFakturaAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YuqlamaFaktura.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

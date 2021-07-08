@@ -31,7 +31,7 @@
 
             <!--fakt_qab item=4-->
             <TabItem x:Name="ItemFakt_qab" BorderThickness="0" Visibility="Collapsed">
-                <local:fakt_qab_ucont/>
+                <local:faktura_all/>
             </TabItem>
 
             <!--fakt ko'rish item=5-->
